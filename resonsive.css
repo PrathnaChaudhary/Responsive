@@ -1,0 +1,171 @@
+/* Reset some basic styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Adjust this to the height of your fixed header */
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    transition: background 0.3s;
+}
+
+nav.scrolled {
+    background: #222;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e8491d;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.3rem;
+}
+
+/* Hero section styles */
+#hero {
+    background: #333;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background: #e8491d;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #d43f00;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* About section styles */
+#about {
+    background: #fff;
+}
+
+/* Services section styles */
+#services {
+    background: #e4e4e4;
+}
+
+.service {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.3rem;
+}
+
+/* Contact section styles */
+#contact {
+    background: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 0.5rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: #e8491d;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #d43f00;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
